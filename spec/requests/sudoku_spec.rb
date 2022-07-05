@@ -8,8 +8,6 @@ RSpec.describe 'Sudokus', type: :request do
     # pending "add some examples (or delete) #{__FILE__}"
   end
   describe 'Sudoku solver' do
-    
-
     let(:board) do
       [
         [0, 9, 0, 0, 0, 0, 0, 0, 6],
@@ -48,8 +46,6 @@ RSpec.describe 'Sudokus', type: :request do
         [3, 2, 8, 1, 9, 6, 5, 4, 7]
       ]
     end
-
-    
 
     describe '#find_empty_positions' do
       subject { find_empty_positions(board) }
@@ -118,7 +114,5 @@ RSpec.describe 'Sudokus', type: :request do
 
       it { should eq(solution) }
     end
-
-    
   end
 end

@@ -1,5 +1,5 @@
 class SudokuController < ApplicationController
-  def begin
+  def start
     arr = params[:data]
 
     empty_positions = []
@@ -11,7 +11,6 @@ class SudokuController < ApplicationController
       end
     end
 
-    
     i = 0
 
     while i < empty_positions.length
